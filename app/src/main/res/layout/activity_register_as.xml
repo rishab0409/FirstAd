@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".register_as">
+
+
+    <ImageView
+        android:id="@+id/creator"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="116dp"
+        android:background="@drawable/button_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <ImageView
+        android:id="@+id/company"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="116dp"
+        android:background="@drawable/button_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creator" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="268dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="72dp"
+        android:gravity="center"
+        android:text="Register your new account"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="54dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="179dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logonew" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/creator"
+        app:layout_constraintStart_toStartOf="@+id/creator"
+        app:layout_constraintTop_toTopOf="@+id/creator"
+        app:srcCompat="@drawable/camera" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/company"
+        app:layout_constraintStart_toStartOf="@+id/company"
+        app:layout_constraintTop_toTopOf="@+id/company"
+        app:srcCompat="@drawable/company" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="85dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Content Creator"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Enterprise"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView16"
+        app:layout_constraintStart_toStartOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

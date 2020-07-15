@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1037207853642",
+    "firebase_url": "https://firstad-f90eb.firebaseio.com",
+    "project_id": "firstad-f90eb",
+    "storage_bucket": "firstad-f90eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037207853642:android:0c004f5eb03943c995a4b3",
+        "android_client_info": {
+          "package_name": "com.example.firstad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037207853642-ul2o0tlso9tfpd0dn7cse469me6mi3ip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firstad",
+            "certificate_hash": "9db2107520e934bb7b9210f02651b84ea4e6eb0b"
+          }
+        },
+        {
+          "client_id": "1037207853642-q4pjlub2m7ml0bvogccovg87ii2qta1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxL5SaqltiBrUzVD_HratcTHgvxNaaI0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037207853642-q4pjlub2m7ml0bvogccovg87ii2qta1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
