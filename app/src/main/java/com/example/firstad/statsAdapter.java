@@ -33,7 +33,7 @@ public class statsAdapter  extends FirebaseRecyclerAdapter<stats,statsAdapter.st
         holder.statsfield3.setText(model.getField3());
         holder.statsfield4.setText(model.getField4());
         holder.statsvalue1.setText(model.getValue1());
-        holder.statsfield2.setText(model.getValue2());
+        holder.statsvalue2.setText(model.getValue2());
         holder.statsvalue3.setText(model.getValue3());
         holder.statsvalue4.setText(model.getValue4());
         Picasso.get().load(model.getImg()).into(holder.statsimg);

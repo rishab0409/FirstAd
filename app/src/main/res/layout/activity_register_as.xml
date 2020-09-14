@@ -8,103 +8,156 @@
     tools:context=".register_as">
 
 
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:text="Register account"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/creator"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="57dp"
-        android:layout_marginEnd="116dp"
-        android:background="@drawable/button_round"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/register_as1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-    <ImageView
-        android:id="@+id/company"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="116dp"
-        android:background="@drawable/button_round"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/creator" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="268dp"
-        android:layout_height="88dp"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="72dp"
-        android:gravity="center"
-        android:text="Register your new account"
-        android:textColor="#FFFFFF"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="54dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="178dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="179dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logonew" />
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="54dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="@+id/creator"
-        app:layout_constraintStart_toStartOf="@+id/creator"
         app:layout_constraintTop_toTopOf="@+id/creator"
         app:srcCompat="@drawable/camera" />
 
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="54dp"
-        android:layout_height="54dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/company"
-        app:layout_constraintStart_toStartOf="@+id/company"
-        app:layout_constraintTop_toTopOf="@+id/company"
-        app:srcCompat="@drawable/company" />
+
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="85dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
         android:gravity="center"
         android:text="Content Creator"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView15"
-        app:layout_constraintStart_toStartOf="@+id/imageView15"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+        app:layout_constraintStart_toStartOf="@+id/creator"
+        app:layout_constraintTop_toTopOf="@+id/creator" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Register yourself as an enterprise and finish the registration process in the further steps "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="@+id/creator"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/know_more"
+        android:text="know more"
+        android:textColor="#B51F1F"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/creator"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/company"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/register_as2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creator" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView152"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/company"
+        app:layout_constraintTop_toTopOf="@+id/company"
+        app:srcCompat="@drawable/company" />
+
+
+    <TextView
+        android:id="@+id/textView132"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
         android:text="Enterprise"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView16"
-        app:layout_constraintStart_toStartOf="@+id/imageView16"
-        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+        app:layout_constraintStart_toStartOf="@+id/company"
+        app:layout_constraintTop_toTopOf="@+id/company" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Register yourself as an enterprise and finish the registration process in the further steps "
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/imageView152"
+        app:layout_constraintStart_toStartOf="@+id/company"
+        app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+    <Button
+        android:id="@+id/button52"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/know_more"
+        android:text="know more"
+        android:textColor="#303CDF"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/company"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

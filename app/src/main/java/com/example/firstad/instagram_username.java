@@ -2,6 +2,7 @@ package com.example.firstad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -34,6 +35,7 @@ public class instagram_username extends AppCompatActivity {
     FirebaseUser currentFirebaseUser;
     DatabaseReference db;
     String uid;
+    ProgressDialog progressDialog;
 
 
     @Override
@@ -53,6 +55,12 @@ public class instagram_username extends AppCompatActivity {
                 instausernamestr=instausername.getText().toString();
                 urlinsta=urlinsta+instausernamestr;
                 new doit().execute();
+                progressDialog=new ProgressDialog(instagram_username.this);
+                progressDialog.show();
+                progressDialog.setContentView(R.layout.progress_dialog);
+                progressDialog.getWindow().setBackgroundDrawableResource(
+                        android.R.color.transparent
+                );
             }
         });
     }
@@ -98,7 +106,7 @@ public class instagram_username extends AppCompatActivity {
             map.put("field4","Average Likes");
             map.put("img","https://firebasestorage.googleapis.com/v0/b/firstad-f90eb.appspot.com/o/instagram.png?alt=media&token=e66963a9-c258-49fa-8744-0652d4a60beb");
             db.updateChildren(map);
-            Toast.makeText(instagram_username.this,"data uploaded",Toast.LENGTH_SHORT).show();
+            progressDialog.dismiss();
         }
     }
 }

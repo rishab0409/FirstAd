@@ -2,6 +2,7 @@ package com.example.firstad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,8 @@ public class youtube_username extends AppCompatActivity {
 
     String uid;
 
+    ProgressDialog  progressDialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +56,12 @@ public class youtube_username extends AppCompatActivity {
                 user=username.getText().toString();
                 url=url+user;
                 new doit().execute();
+                progressDialog=new ProgressDialog(youtube_username.this);
+                progressDialog.show();
+                progressDialog.setContentView(R.layout.progress_dialog);
+                progressDialog.getWindow().setBackgroundDrawableResource(
+                        android.R.color.transparent
+                );
             }
         });
 
@@ -101,6 +110,8 @@ public class youtube_username extends AppCompatActivity {
 
 
             db.updateChildren(map);
+            progressDialog.dismiss();
+
 
         }
     }

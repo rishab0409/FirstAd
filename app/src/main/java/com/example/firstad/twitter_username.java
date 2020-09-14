@@ -2,6 +2,7 @@ package com.example.firstad;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
@@ -31,7 +32,7 @@ public class twitter_username extends AppCompatActivity {
     FirebaseUser currentFirebaseUser;
     DatabaseReference db;
     String uid;
-
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,13 @@ public class twitter_username extends AppCompatActivity {
                 twitterusername=twitteruser.getText().toString();
                 twitterurl=twitterurl+twitterusername;
                 new doit().execute();
+
+                progressDialog=new ProgressDialog(twitter_username.this);
+                progressDialog.show();
+                progressDialog.setContentView(R.layout.progress_dialog);
+                progressDialog.getWindow().setBackgroundDrawableResource(
+                        android.R.color.transparent
+                );
             }
         });
     }
@@ -94,6 +102,7 @@ public class twitter_username extends AppCompatActivity {
             map.put("img","https://firebasestorage.googleapis.com/v0/b/firstad-f90eb.appspot.com/o/twitter.png?alt=media&token=90244426-2c4a-4cd4-9761-5f40e770dd20");
 
             db.updateChildren(map);
+            progressDialog.dismiss();
 
 
         }

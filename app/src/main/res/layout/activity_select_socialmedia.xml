@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,80 +7,305 @@
     android:background="#000000"
     tools:context=".select_socialmedia">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="0dp"
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="60dp"
-        android:gravity="center"
-        android:text="SOCIAL MEDIA INFLUENCE"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:text="Social media influence"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/youtube_select"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/social_media_select2"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <ImageView
-        android:id="@+id/youtube_select"
+        android:id="@+id/imageView6"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/youtube"
+        app:layout_constraintEnd_toEndOf="@+id/youtube_select"
+        app:layout_constraintTop_toTopOf="@+id/youtube_select" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="Youtube"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/youtube_select"
+        app:layout_constraintTop_toTopOf="@+id/youtube_select" />
+
+    <TextView
+        android:id="@+id/textView16"
         android:layout_width="0dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="7dp"
-        android:background="@drawable/youtube_select"
-        app:layout_constraintEnd_toStartOf="@+id/facebook_select"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:text="Enter the username of your Youtube account if you want to mention Youtube influence in your profile. We extract information like followers, likes, comments etc from your account"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/youtube_select"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="90dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/know_more"
+        android:text="know more"
+        android:textColor="#DA4646"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/youtube_select"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
 
     <ImageView
         android:id="@+id/facebook_select"
         android:layout_width="0dp"
         android:layout_height="160dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="27dp"
-        android:background="@drawable/facebook_select"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/social_media_select"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/youtube_select"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youtube_select" />
+
+    <ImageView
+        android:id="@+id/imageView62"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/facebook"
+        app:layout_constraintEnd_toEndOf="@+id/facebook_select"
+        app:layout_constraintTop_toTopOf="@+id/facebook_select" />
+
+    <TextView
+        android:id="@+id/textView152"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="Facebook"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/facebook_select"
+        app:layout_constraintTop_toTopOf="@+id/facebook_select" />
+
+    <TextView
+        android:id="@+id/textView162"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:text="Enter the username of your Youtube account if you want to mention Youtube influence in your profile. We extract information like followers, likes, comments etc from your account"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView62"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/facebook_select"
+        app:layout_constraintTop_toBottomOf="@+id/textView152" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="90dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/know_more"
+        android:text="know more"
+        android:textColor="#3D6CDA"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/facebook_select"
+        app:layout_constraintTop_toBottomOf="@+id/textView162" />
+
 
     <ImageView
         android:id="@+id/instagram_select"
         android:layout_width="0dp"
         android:layout_height="160dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="7dp"
-        android:background="@drawable/instagram_select"
-        app:layout_constraintEnd_toStartOf="@+id/twitter_select"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/youtube_select" />
-
-    <ImageView
-        android:id="@+id/twitter_select"
-        android:layout_width="0dp"
-        android:layout_height="160dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="27dp"
-        android:background="@drawable/twitter_select"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/socia_media_select3"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/instagram_select"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/facebook_select" />
 
+    <ImageView
+        android:id="@+id/imageView623"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/instagram"
+        app:layout_constraintEnd_toEndOf="@+id/instagram_select"
+        app:layout_constraintTop_toTopOf="@+id/instagram_select" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView1523"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:text="MORE"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:text="Instagram"
         android:textColor="#FFFFFF"
-        android:textSize="14sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/twitter_select"
-        app:layout_constraintTop_toBottomOf="@+id/twitter_select" />
+        app:layout_constraintStart_toStartOf="@+id/instagram_select"
+        app:layout_constraintTop_toTopOf="@+id/instagram_select" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView1623"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:text="Enter the username of your Youtube account if you want to mention Youtube influence in your profile. We extract information like followers, likes, comments etc from your account"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView623"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/instagram_select"
+        app:layout_constraintTop_toBottomOf="@+id/textView1523" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="90dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/know_more"
+        android:text="know more"
+        android:textColor="#D33D93"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/instagram_select"
+        app:layout_constraintTop_toBottomOf="@+id/textView1623" />
+
+
+        <ImageView
+            android:id="@+id/twitter_select"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/social_media_select4"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/instagram_select" />
+
+        <ImageView
+            android:id="@+id/imageView6234"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/twitter"
+            app:layout_constraintEnd_toEndOf="@+id/twitter_select"
+            app:layout_constraintTop_toTopOf="@+id/twitter_select" />
+
+        <TextView
+            android:id="@+id/textView15234"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:text="Twitter"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/twitter_select"
+            app:layout_constraintTop_toTopOf="@+id/twitter_select" />
+
+        <TextView
+            android:id="@+id/textView16234"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:text="Enter the username of your Youtube account if you want to mention Youtube influence in your profile. We extract information like followers, likes, comments etc from your account"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6234"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/twitter_select"
+            app:layout_constraintTop_toBottomOf="@+id/textView15234" />
+
+        <Button
+            android:id="@+id/button234"
+            android:layout_width="90dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/know_more"
+            android:text="know more"
+            android:textColor="#1E70AA"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/twitter_select"
+            app:layout_constraintTop_toBottomOf="@+id/textView16234" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

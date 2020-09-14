@@ -23,6 +23,7 @@ import java.util.HashMap;
 public class product_details extends AppCompatActivity {
 
     Button imageUpload;
+    Button submitProd;
     static final int ImageBack=1;
     private StorageReference Folder;
     EditText prodTitle;
@@ -52,12 +53,20 @@ public class product_details extends AppCompatActivity {
         prodAff=findViewById(R.id.prodAff);
         prodcomp=findViewById(R.id.prodcomp);
         prodtime=findViewById(R.id.prodtime);
+        submitProd=findViewById(R.id.submitProd);
 
         Folder= FirebaseStorage.getInstance().getReference().child("company_img");
         prodTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 prodTitle.setBackgroundResource(R.drawable.smallyellow);
+            }
+        });
+        submitProd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(product_details.this,MainActivity.class);
+                startActivity(i);
             }
         });
         imageUpload.setOnClickListener(new View.OnClickListener() {
